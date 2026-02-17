@@ -20,3 +20,6 @@ def f(list):
 # f(list)[2] >>>  min(newList)
 
 print(f(list)[0])
+
+
+
