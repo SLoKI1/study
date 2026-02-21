@@ -4,8 +4,6 @@
 
 # print(avg(1,2,6,8))
 
-
-
 # def metrConv(sm):
 #     metr = sm//100
 #     otherSm = sm%100

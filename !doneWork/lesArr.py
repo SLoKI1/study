@@ -42,6 +42,4 @@ def detect_index_num(arr):
 
     return indexStorage, numStorage
 
-
-
 print(detect_nechotnoe(a))
