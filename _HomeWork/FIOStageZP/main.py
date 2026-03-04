@@ -8,14 +8,14 @@ with open("_HomeWork/FIOStageZP/testDataFioStageZP.txt", "r", encoding="utf-8") 
         counterrMember += 1
 
         sumStage += int(line[3])
-        zp = int(line[4])
+        zp = float(line[4])
         ndfl = zp * 0.1
-        resZp = zp - ndfl
+        resZp = round(zp - ndfl,2)
         bank += resZp
         otchot += f"{line[0]} {line[1][0]}. {line[2][0]}. {zp} {ndfl} {resZp}\n"
     with open("_HomeWork/FIOStageZP/otchotFioStageZP.txt", "w", encoding="utf-8") as otchotFioStageZP:
-        otchotFioStageZP.write(otchot)
         otchotFioStageZP.write(f"""
+{otchot}
 {"="*7}ИТОГ{"="*7}
 Сотрудников: {counterrMember}
 Cредний стаж: {round(sumStage/counterrMember,2)}
