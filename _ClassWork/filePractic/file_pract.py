@@ -5,7 +5,6 @@ counter = 0
 max_min_num = 0
 
 with open("file.txt","r") as file:
-
     for asd in file:
         numer = int(asd)
         if numer < int(max_min_num):
